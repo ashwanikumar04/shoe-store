@@ -20,15 +20,6 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(this, navController)
         setupWithNavController(toolbar, navController)
 
-        // setSupportActionBar(toolbar)
-
-//        val binding: ActivityMainBinding =
-//            DataBindingUtil.setContentView(this, R.layout.activity_main)
     }
 
-
-//    override fun onSupportNavigateUp(): Boolean {
-//        return NavigationUI.navigateUp(
-//            Navigation.findNavController(this, R.id.navHostFragment), drawer_layout)
-//    }
 }
