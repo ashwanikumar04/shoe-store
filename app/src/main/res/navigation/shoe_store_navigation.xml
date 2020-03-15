@@ -30,7 +30,10 @@
         tools:layout="@layout/fragment_instructions">
         <action
             android:id="@+id/action_listing"
-            app:destination="@id/listingFragment" />
+            app:destination="@id/listingFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/shoe_store_navigation"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/listingFragment"
