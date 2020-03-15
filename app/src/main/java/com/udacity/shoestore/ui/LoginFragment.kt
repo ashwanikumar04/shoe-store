@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
-import com.udacity.shoestore.handlers.LoginHandler
+import com.udacity.shoestore.handlers.Handlers
 
 class LoginFragment : Fragment() {
     override fun onCreateView(
@@ -20,7 +20,7 @@ class LoginFragment : Fragment() {
 
         val binding: FragmentLoginBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
-        binding.handler = LoginHandler()
+        binding.handler = Handlers()
 
         return binding.root
     }

@@ -1,22 +1,23 @@
 package com.udacity.shoestore.handlers
 
+import android.util.Patterns
 import android.view.View
 import androidx.navigation.Navigation
 import com.google.android.material.textfield.TextInputEditText
 import com.udacity.shoestore.R
 
-open class LoginHandler {
+open class Handlers {
 
     fun onLogin(view: View,
                 etEmail: TextInputEditText,
                 etPassword: TextInputEditText
     ) {
-        if (etEmail.text.toString().isBlank()) {
-            etEmail.error = "Email can't be empty"
+        if (etEmail.text.toString().isBlank() || !Patterns.EMAIL_ADDRESS.matcher(etEmail.text.toString()).matches()) {
+            etEmail.error = "Email is empty or invalid. "
             return
         }
         if (etPassword.text.toString().isBlank()) {
-            etPassword.error = "Password can't be empty"
+            etPassword.error = "Password can't be empty."
             return
         }
         Navigation.findNavController(view).navigate(R.id.action_log_in)

@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.udacity.shoestore.ui.LoginFragment"
-        android:label="LoginFragment"
-        tools:layout="@layout/fragment_login" >
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_log_in"
             app:destination="@id/welcomeFragment" />
@@ -17,8 +17,8 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.udacity.shoestore.ui.WelcomeFragment"
-        android:label="WelcomeFragment"
-        tools:layout="@layout/fragment_welcome" >
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_instructions"
             app:destination="@id/instructionsFragment" />
@@ -26,8 +26,8 @@
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.udacity.shoestore.ui.InstructionsFragment"
-        android:label="InstructionsFragment"
-        tools:layout="@layout/fragment_instructions" >
+        android:label="Instructions"
+        tools:layout="@layout/fragment_instructions">
         <action
             android:id="@+id/action_listing"
             app:destination="@id/listingFragment" />
@@ -35,8 +35,8 @@
     <fragment
         android:id="@+id/listingFragment"
         android:name="com.udacity.shoestore.ui.ListingFragment"
-        android:label="ListingFragment"
-        tools:layout="@layout/fragment_listing" >
+        android:label="Shoe Store"
+        tools:layout="@layout/fragment_listing">
         <action
             android:id="@+id/action_add_details"
             app:destination="@id/detailsFragment" />
@@ -44,8 +44,8 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.udacity.shoestore.ui.DetailsFragment"
-        android:label="DetailsFragment"
-        tools:layout="@layout/fragment_details" >
+        android:label="Add shoe details"
+        tools:layout="@layout/fragment_details">
         <action
             android:id="@+id/action_details_listing"
             app:destination="@id/listingFragment" />

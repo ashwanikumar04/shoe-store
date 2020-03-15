@@ -5,7 +5,7 @@
 
         <variable
             name="handler"
-            type="com.udacity.shoestore.handlers.LoginHandler" />
+            type="com.udacity.shoestore.handlers.Handlers" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -78,6 +78,7 @@
                 style="@style/Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="@{(v)->handler.onLogin(v,etEmail,etPassword)}"
                 android:text="@string/sign_up" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

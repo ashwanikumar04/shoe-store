@@ -4,4 +4,6 @@
     <string name="sign_up">Sign up</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="shoe_store">Shoe Store</string>
+    <string name="shoe_store_welcome">Welcome, here you will find various types of shoes.   You can also add new shoes to the store.</string>
 </resources>
