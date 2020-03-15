@@ -51,6 +51,6 @@
         tools:layout="@layout/fragment_details">
         <action
             android:id="@+id/action_details_listing"
-            app:destination="@id/listingFragment" />
+            app:popUpTo="@+id/listingFragment" />
     </fragment>
 </navigation>

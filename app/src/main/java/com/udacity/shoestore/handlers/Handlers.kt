@@ -6,6 +6,7 @@ import androidx.navigation.Navigation
 import com.google.android.material.textfield.TextInputEditText
 import com.udacity.shoestore.R
 import com.udacity.shoestore.ui.InstructionsFragmentDirections
+import com.udacity.shoestore.vm.ShoeViewModel
 
 open class Handlers {
 
@@ -32,5 +33,21 @@ open class Handlers {
     fun onListing(view: View
     ) {
         Navigation.findNavController(view).navigate(InstructionsFragmentDirections.actionListing())
+    }
+
+    fun onAddShoe(view: View
+    ) {
+        Navigation.findNavController(view).navigate(R.id.action_add_details)
+    }
+
+    fun add(view: View,
+            viewModel: ShoeViewModel
+    ) {
+
+    }
+
+    fun cancel(view: View
+    ) {
+        Navigation.findNavController(view).navigate(R.id.action_details_listing)
     }
 }

@@ -11,4 +11,11 @@
     <string name="instructions_1">1. You can view the list of the all the shoes in the store.</string>
     <string name="instructions_2">2. You can also add a new shoe with details to the store.</string>
     <string name="instructions_3">3. The newly added shoe will be shown in the store.</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="name">Shoe Name</string>
+    <string name="size">Shoe Size</string>
+    <string name="company">Company</string>
+    <string name="description">Description</string>
+    <string name="image">Shoe Image Url</string>
 </resources>
