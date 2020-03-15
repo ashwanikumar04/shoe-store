@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/tv_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:text="instructions"
-        android:textSize="17sp" />
-</LinearLayout>
+<layout>
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.udacity.shoestore.handlers.Handlers" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/tvInstructions1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_1"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/tvInstructions2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_2"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/tvInstructions3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_3"
+            android:textSize="@dimen/text_15" />
+
+        <Button
+            android:id="@+id/btnInstructions"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16"
+            android:onClick="@{(v)->handler.onListing(v)}"
+            android:text="@string/store_listing" />
+
+    </LinearLayout>
+</layout>

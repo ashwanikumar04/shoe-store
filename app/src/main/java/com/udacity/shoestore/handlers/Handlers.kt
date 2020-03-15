@@ -22,4 +22,14 @@ open class Handlers {
         }
         Navigation.findNavController(view).navigate(R.id.action_log_in)
     }
+
+    fun onInstructions(view: View
+    ) {
+        Navigation.findNavController(view).navigate(R.id.action_instructions)
+    }
+
+    fun onListing(view: View
+    ) {
+        Navigation.findNavController(view).navigate(R.id.action_listing)
+    }
 }

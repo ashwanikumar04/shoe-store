@@ -6,4 +6,9 @@
     <string name="password">Password</string>
     <string name="shoe_store">Shoe Store</string>
     <string name="shoe_store_welcome">Welcome, here you will find various types of shoes.   You can also add new shoes to the store.</string>
+    <string name="instructions">Instructions</string>
+    <string name="store_listing">Store</string>
+    <string name="instructions_1">1. You can view the list of the all the shoes in the store.</string>
+    <string name="instructions_2">2. You can also add a new shoe with details to the store.</string>
+    <string name="instructions_3">3. The newly added shoe will be shown in the store.</string>
 </resources>
