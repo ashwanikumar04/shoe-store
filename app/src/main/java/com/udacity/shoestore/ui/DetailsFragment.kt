@@ -25,15 +25,15 @@ class DetailsFragment : Fragment() {
     ): View? {
         val binding: FragmentDetailsBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_details, container, false)
-        binding.handler = Handlers()
+        binding.handler = Handlers(activity!!)
 
         binding.btnAddShoe.setOnClickListener {
 
 
-            if (isValid(etName, "Enter shoe name")
-                && isValid(etSize, "Enter show size")
-                && isValid(etCompany, "Enter show company")
-                && isValid(etDescription, "Enter show description")
+            if (isValid(etName, getString(R.string.error_shoe_name))
+                && isValid(etSize, getString(R.string.error_shoe_size))
+                && isValid(etCompany, getString(R.string.error_shoe_company))
+                && isValid(etDescription, getString(R.string.error_shoe_description))
             ) {
                 viewModel.addShoe(
                     Shoe(

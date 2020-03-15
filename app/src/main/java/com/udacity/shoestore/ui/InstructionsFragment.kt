@@ -17,7 +17,7 @@ class InstructionsFragment : Fragment() {
     ): View? {
         val binding: FragmentInstructionsBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_instructions, container, false)
-        binding.handler = Handlers()
+        binding.handler = Handlers(activity!!)
         return binding.root
 
     }
