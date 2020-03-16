@@ -6,7 +6,6 @@
         <variable
             name="handler"
             type="com.udacity.shoestore.handlers.Handlers" />
-
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
