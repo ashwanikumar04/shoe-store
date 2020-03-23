@@ -26,23 +26,15 @@ class DetailsFragment : Fragment() {
         val binding: FragmentDetailsBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_details, container, false)
         binding.handler = Handlers(requireActivity())
+        binding.shoe = Shoe("", 0.0, "", "")
 
         binding.btnAddShoe.setOnClickListener {
-
-
             if (isValid(etName, getString(R.string.error_shoe_name))
                 && isValid(etSize, getString(R.string.error_shoe_size))
                 && isValid(etCompany, getString(R.string.error_shoe_company))
                 && isValid(etDescription, getString(R.string.error_shoe_description))
             ) {
-                viewModel.addShoe(
-                    Shoe(
-                        etName.text.toString(),
-                        etSize.text.toString().toDouble(),
-                        etCompany.text.toString(),
-                        etDescription.text.toString()
-                    )
-                )
+                binding.shoe?.let { s -> viewModel.addShoe(s) }
                 Navigation.findNavController(it).navigate(R.id.action_details_listing)
             }
         }
