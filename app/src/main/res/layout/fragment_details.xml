@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -15,6 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!--
+        I am using constraint layout as it allows us to lay out child views using ‘constraints’ to define position
+         based relationships between different views found in our layout. The aim of the ConstraintLayout is to help reduce the number of nested views,
+         which will improve the performance of our layout files.
+
+        -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

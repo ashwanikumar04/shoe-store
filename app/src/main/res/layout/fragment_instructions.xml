@@ -8,6 +8,9 @@
             type="com.udacity.shoestore.handlers.Handlers" />
     </data>
 
+    <!--
+    As this is a simple layout I am using linear layout to keep the layout maintainable
+    -->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

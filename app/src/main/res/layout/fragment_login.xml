@@ -15,7 +15,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="@dimen/margin_16">
-
+        <!--
+           As this is a simple layout I am using linear layout to keep the layout maintainable
+           -->
         <LinearLayout
             android:id="@+id/llEmailLayout"
             android:layout_width="match_parent"

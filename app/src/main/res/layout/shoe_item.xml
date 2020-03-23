@@ -19,7 +19,9 @@
         app:cardBackgroundColor="@color/colorAccent"
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp">
-
+        <!--
+           As this is a simple layout I am using linear layout to keep the layout maintainable
+           -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
