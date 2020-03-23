@@ -1,7 +1,6 @@
 package com.udacity.shoestore.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,7 +31,7 @@ class ListingFragment : Fragment() {
                 container,
                 false
             )
-        binding.handler = Handlers(activity!!)
+        binding.handler = Handlers(requireActivity())
         return binding.root
     }
 

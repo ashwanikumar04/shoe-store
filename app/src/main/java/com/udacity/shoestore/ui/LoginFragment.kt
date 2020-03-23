@@ -20,7 +20,7 @@ class LoginFragment : Fragment() {
 
         val binding: FragmentLoginBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
-        binding.handler = Handlers(activity!!)
+        binding.handler = Handlers(requireActivity())
 
         return binding.root
     }

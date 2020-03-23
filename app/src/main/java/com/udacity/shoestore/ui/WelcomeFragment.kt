@@ -18,7 +18,7 @@ class WelcomeFragment : Fragment() {
 
         val binding: FragmentWelcomeBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)
-        binding.handler = Handlers(activity!!)
+        binding.handler = Handlers(requireActivity())
         return binding.root
     }
 }

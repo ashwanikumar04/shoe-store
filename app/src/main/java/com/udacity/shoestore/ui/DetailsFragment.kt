@@ -25,7 +25,7 @@ class DetailsFragment : Fragment() {
     ): View? {
         val binding: FragmentDetailsBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_details, container, false)
-        binding.handler = Handlers(activity!!)
+        binding.handler = Handlers(requireActivity())
 
         binding.btnAddShoe.setOnClickListener {
 
